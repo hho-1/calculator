@@ -86,14 +86,14 @@ buttonsContainer.addEventListener('click', (e) => {
     if(e.target.classList.contains("equal")){
         firstNumber = calculate(operator)
 
-        if(toString(firstNumber).length > 10){
-            
+        /* if(toString(primaryValue).length > 10){
+            console.log(object);
             displayTop.innerHTML = firstNumber.toExponential()
         }
         else{
-            displayTop.innerHTML = firstNumber
-        }
-        
+            
+        } */
+        displayTop.innerHTML = firstNumber
         displayBottom.innerHTML = "0"
         operator = ""
         isPreviousOperator = true
