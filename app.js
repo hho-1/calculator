@@ -25,14 +25,13 @@ buttonsContainer.addEventListener('click', (e) => {
 
     if(e.target.classList.contains("number")){
         
-        if(primaryValue.length < 11){
-            if(primaryValue !== "0"){
-                displayBottom.innerHTML += buttonValue
-            }
-            else if(buttonValue !== "0"){
-                displayBottom.innerHTML = buttonValue
-            }
+        if(primaryValue == "0"){
+            displayBottom.innerHTML = buttonValue
         }
+        else if(primaryValue !== "0" && primaryValue.length < 11){
+            displayBottom.innerHTML += buttonValue
+        }
+        
     }
 
     if(e.target.classList.contains("pm")){
